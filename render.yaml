@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: ff-signals-mini-api
+    runtime: python
+    runtimeVersion: 3.11.0
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: APP_NAME
+        value: "FF SIGNALS MINI"
+      - key: DEBUG
+        value: false
+      - key: SECRET_KEY
+        sync: false
+      - key: PIN_CODE
+        sync: false
+      - key: ALPHA_VANTAGE_API_KEY
+        sync: false
+    autoDeploy: true
+    healthCheckPath: /health

@@ -1,0 +1,37 @@
+# Framework - FastAPI
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+
+# Configuration
+python-dotenv==1.0.1
+pydantic==2.10.6
+pydantic-settings==2.7.1
+
+# Sécurité
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.3.0
+
+# HTTP et WebSocket
+python-multipart==0.0.20
+websockets==14.1
+aiohttp==3.11.11
+httpx==0.28.1
+
+# Données de marché
+yfinance==0.2.54
+alpha-vantage==2.3.1
+
+# Analyse technique
+numpy==2.1.3
+
+# Base de données
+aiosqlite==0.20.0
+sqlalchemy==2.0.36
+
+# Timezone et fichiers
+pytz==2024.2
+aiofiles==24.1.0
+
+# Logging et monitoring
+structlog==24.4.0
