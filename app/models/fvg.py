@@ -4,7 +4,7 @@ Modèle Fair Value Gap.
 from typing import Literal, Optional
 from datetime import datetime
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class FairValueGap(BaseModel):
