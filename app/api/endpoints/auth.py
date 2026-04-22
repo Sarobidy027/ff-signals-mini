@@ -1,7 +1,7 @@
 """
 Endpoint d'authentification.
 """
-from fastapi import APIRouter, HTTPException, status
+from fastapi import APIRouter, HTTPException, status, Depends
 from datetime import timedelta
 import structlog
 
