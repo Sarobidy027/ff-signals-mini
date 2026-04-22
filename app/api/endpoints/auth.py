@@ -1,6 +1,7 @@
 """
 Endpoint d'authentification.
 """
+from app.api.dependencies import get_current_user
 from fastapi import APIRouter, HTTPException, status, Depends
 from datetime import timedelta
 import structlog
